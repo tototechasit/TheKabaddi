@@ -25,11 +25,11 @@ public class PlayerController : MonoBehaviour {
 
         Vector3 movement = new Vector3(horizontalMove, 0, verticalMove);
 
-        moveCharacter(movement);
+        MoveCharacter(movement);
     }
 
     // Move player.
-    public static void moveCharacter(Vector3 movement) {
+    public static void MoveCharacter(Vector3 movement) {
         rb.velocity = movement * speed;
     }
 }
