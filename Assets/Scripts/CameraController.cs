@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour {
     private Vector3 offset;         // offset is beginning position of camera
 
 	void Start () {
+        //player = GameObject.Find("Player(Clone)");
         offset = transform.position - player.transform.position;
 	}
 	

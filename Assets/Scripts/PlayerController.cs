@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     private static Rigidbody rb;        // It's player movement component.
-    public static float speed = 10;     // Fixed value for control player movement speed.
+    public float speed;                 // Fixed value for control player movement speed.
     private static Transform player;    // Player object.
 
     protected Joystick joystick;        // Game controller.
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     // Move player.
-    public static void MoveCharacter(Vector3 movement) {
+    public void MoveCharacter(Vector3 movement) {
         rb.velocity = movement * speed;
     }
 }
