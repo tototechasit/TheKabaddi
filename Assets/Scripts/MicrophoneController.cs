@@ -25,7 +25,7 @@ public class MicrophoneController : MonoBehaviour {
     void Update() {
         micLoundness = GetLoundnessInDecibel();
 
-        Debug.Log(micLoundness);
+        //Debug.Log(micLoundness);
     }
 
     // Start using microphone.

@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour {
 
-    public GameObject player;       // get player for letting camera can follow
+    public Transform trackedTarget;
     private Vector3 offset;         // offset is beginning position of camera
 
-	void Start () {
-        //player = GameObject.Find("Player(Clone)");
-        offset = transform.position - player.transform.position;
-	}
-	
 
-	void LateUpdate () {
-        transform.position = offset + player.transform.position;
-	}
+	void Start () {
+        offset = transform.position;
+    }
+
+
+    void LateUpdate()
+    {
+
+        transform.position = offset + trackedTarget.transform.position;
+    }
 }

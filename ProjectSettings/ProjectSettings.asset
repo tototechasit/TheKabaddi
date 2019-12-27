@@ -733,10 +733,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: bb498f80-ebe1-4489-9a30-2f538174f168
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: TheKabaddi
+  organizationId: 9onhud
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
