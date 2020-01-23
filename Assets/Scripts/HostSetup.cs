@@ -40,6 +40,9 @@ public class HostSetup : MonoBehaviour
 
         lobbyManager.matchMaker.JoinMatch(match.networkId, "", "", "", 0, 0, lobbyManager.OnMatchJoined);
 
+        GameObject findLobbyPopup = GameObject.FindGameObjectWithTag("FINDLOBBY");
+        findLobbyPopup.SetActive(false);
+
 
     }
 

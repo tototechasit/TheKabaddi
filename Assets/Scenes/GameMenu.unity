@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 96218629}
   m_Layer: 5
   m_Name: FindLobbyPopup
-  m_TagString: Untagged
+  m_TagString: FINDLOBBY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -805,7 +805,7 @@ MonoBehaviour:
   m_LogLevel: 2
   m_PlayerPrefab: {fileID: 0}
   m_AutoCreatePlayer: 1
-  m_PlayerSpawnMethod: 0
+  m_PlayerSpawnMethod: 1
   m_OfflineScene: GameMenu
   m_OnlineScene: 
   m_SpawnPrefabs: []
@@ -851,7 +851,7 @@ MonoBehaviour:
     m_MaxTimerTimeout: 12000
     m_MinNetSimulatorTimeout: 1
     m_MaxNetSimulatorTimeout: 12000
-  m_Channels: 
+  m_Channels: 0500000000000000
   m_UseWebSockets: 0
   m_UseSimulator: 0
   m_SimulatedLatency: 1
@@ -865,9 +865,9 @@ MonoBehaviour:
   isNetworkActive: 0
   matchMaker: {fileID: 0}
   m_ShowLobbyGUI: 0
-  m_MaxPlayers: 4
+  m_MaxPlayers: 2
   m_MaxPlayersPerConnection: 1
-  m_MinPlayers: 0
+  m_MinPlayers: 2
   m_LobbyPlayerPrefab: {fileID: 8498968411319578555, guid: c34f4b75749b2f143ba22f44883f153f,
     type: 3}
   m_GamePlayerPrefab: {fileID: 6944465283597228205, guid: de9266e2270d33f488e0452227d4e344,

@@ -205,6 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+  joystick: {fileID: 0}
 --- !u!114 &7911559295162980961
 MonoBehaviour:
   m_ObjectHideFlags: 0

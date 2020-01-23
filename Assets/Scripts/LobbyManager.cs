@@ -13,6 +13,7 @@ public class LobbyManager : NetworkLobbyManager
         lobby.SetActive(false);
     }
 
+    // This method is called when player create room
     public override void OnStartHost()
     {
         base.OnStartHost();
@@ -20,5 +21,13 @@ public class LobbyManager : NetworkLobbyManager
         lobby.SetActive(true);
     }
 
+    // This method is called on every client when game change from lobby scene to game play scene.
+    public override void OnLobbyClientSceneChanged(NetworkConnection conn)
+    {
+        base.OnLobbyClientSceneChanged(conn);
 
+        // Hide all lobby UI
+        GameObject canvas = GameObject.FindGameObjectWithTag("MAINMENU");
+        canvas.SetActive(false);
+    }
 }

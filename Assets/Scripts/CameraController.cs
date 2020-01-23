@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour {
 
-    public Transform trackedTarget;
+    public Transform trackedTarget; // default set from PlayerController script when player is spawn
     private Vector3 offset;         // offset is beginning position of camera
 
 
@@ -15,7 +15,9 @@ public class CameraController : MonoBehaviour {
 
     void LateUpdate()
     {
-
-        transform.position = offset + trackedTarget.transform.position;
+        if (trackedTarget != null)
+        {
+            transform.position = offset + trackedTarget.transform.position;
+        }
     }
 }
